@@ -1,0 +1,10 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+
+}
+
+div{
+    border: dotted;
+    max-width: fit-content;
+}
