@@ -1,10 +1,30 @@
 .menu{
     display: flex;
     flex-direction: row;
+    background-color: beige;
+    max-width: min-content;
 
 }
 
+*{
+
+background-color: bisque;
+
+}
+
+
 div{
     border: dotted;
-    max-width: fit-content;
+    max-width: max-content;
+    background-color: beige;
+    
+}
+
+h2{
+    background-color: beige;
+    max-height: 35px;
+}
+
+.menu{
+
 }
