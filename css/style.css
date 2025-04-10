@@ -1,6 +1,7 @@
 body{
 
-    background-image: url(../images/Noctua-bakrund.png);
+
+
 
 }
 
@@ -9,7 +10,7 @@ div{
     padding-left: 5px;
     padding-right: 5px;
     max-width: max-content;
-    background-color: rgba(245, 245, 220, 0.493);
+  
     
 }
 
@@ -28,17 +29,17 @@ p{
 .menu{
     display: flex;
     flex-direction: row;
-    background-color: rgb(0, 0, 0);
+    
     max-width: min-content;
     max-height: min-content;
-    border: solid;
+    border: ;
     
-    display: none;
 
-background-color: rgba(124, 41, 2, 0.685);
+background-color: rgb(255, 253, 241);
 
 
 }
+
 
 
 .main{
