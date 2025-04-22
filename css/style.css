@@ -27,19 +27,18 @@ p{
 
 
 .menu{
-    display: flex;
-    flex-direction: row;
-    
-    max-width: min-content;
-    max-height: min-content;
-    border: ;
-    
-
-background-color: rgb(255, 253, 241);
+padding:0;
+list-style-type: none;
 
 
 }
 
+.menu-link{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #222;
+}
 
 
 .main{
