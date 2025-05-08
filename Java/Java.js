@@ -1,7 +1,12 @@
-const menu=document.querySelector(".menu");
-const menuPic=document.querySelector(".menu-pic");
 
-menu.addEventListener("click", (e)=>{
-    e.preventDefault();
-    menuPic.classList.toggle(".menu-pic")
-})
+const menupic = document.querySelector(".menupic")
+
+menupic.addEventListener(
+    "click", 
+    function(event) {
+        console.log(event);
+        event.preventDefault();
+    menupic.style.display = "flex"
+    }
+);
+

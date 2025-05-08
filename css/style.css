@@ -41,18 +41,88 @@ list-style-type: none;
 }
 
 
-.main{
-  
+.om-oss{
+
+    margin-bottom: 80px;
     margin-left: 20px;
     margin-right: 20px;
-background-color: bisque;
-
-    padding-bottom: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    
+    padding-right: 400px;
+    background-color: bisque;
+    display: grid;
+    grid-template-areas: "logo textomoss"
+    
+    
+    
+    ;
+    
 }
+
+.om-osstext{
+
+
+
+    grid-area: textomoss;
+}
+.om-osstext p{
+    width: 300px;
+}
+
+.noctua-logo{
+
+
+    
+    grid-area: logo ;
+}
+
+
+
+.nya-fläkt{
+  
+    
+    margin-left: 20px;
+    margin-right: 20px;
+
+background-color: bisque;
+display: grid;
+
+padding-top: 20px;
+padding-right: 10px;
+padding-left: 10px;
+padding-bottom: 50px;
+   grid-template-areas: 
+   "bild1 bes"
+   ;
+}
+
+
+
+
+.bildbeskrivning{
+
+    grid-area: bes;
+    margin-right: 20px;
+}
+
+.bild1{
+
+    grid-area: bild1;
+
+}
+
+
+
 
 @media screen and (min-width:600px) {
     .main{
     margin-left: 200px;
     margin-right: 20px;
+   
     }
-}
+    .menupic{ 
+        display: none;
+
+    }
