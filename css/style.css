@@ -1,128 +1,126 @@
-body{
+body {
+  background-color: ;
+}
 
+div {
+  padding-left: 5px;
+  padding-right: 5px;
+  max-width: max-content;
+}
 
+p {
+  max-height: 35px;
+}
 
+.menu {
+  padding: 0;
+  list-style-type: none;
+}
 
+.menu-link {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #222;
+}
+
+.om-oss {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+border-style: groove;
+  padding-right: 400px;
+  background-color: bisque;
+  display: grid;
+  grid-template-areas:
+    "logo          "
+    "textomoss";
+}
+
+.om-osstext {
+  grid-area: textomoss;
+}
+.om-osstext p {
+  width: 300px;
+}
+
+.noctua-logo {
+  grid-area: logo;
 }
 
 
-div{
-    padding-left: 5px;
-    padding-right: 5px;
-    max-width: max-content;
-  
-    
-}
+.vd {
+  margin-left: 20px;
+  margin-right: 20px;
 
-p{
-   
-    max-height: 35px;
-}
+  background-color: bisque;
+  display: grid;
+  border-style: groove;
 
-
-
-
-
-
-
-
-.menu{
-padding:0;
-list-style-type: none;
-
+  padding-top: 20px;
+  padding-right: 200px;
+  padding-left: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+ 
 
 }
-
-.menu-link{
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: #222;
+.vd-bild{
+    max-width: 500px;
 }
 
 
-.om-oss{
+.nya-fläkt {
+  margin-left: 20px;
+  margin-right: 20px;
 
-    margin-bottom: 80px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    
-    
-    padding-right: 400px;
-    background-color: bisque;
-    display: grid;
-    grid-template-areas: "logo textomoss"
-    
-    
-    
-    ;
-    
-}
+  background-color: bisque;
+  display: grid;
+  border-style: groove;
 
-.om-osstext{
-
-
-
-    grid-area: textomoss;
-}
-.om-osstext p{
-    width: 300px;
-}
-
-.noctua-logo{
-
-
-    
-    grid-area: logo ;
-}
-
-
-
-.nya-fläkt{
-  
-    
-    margin-left: 20px;
-    margin-right: 20px;
-
-background-color: bisque;
-display: grid;
-
-padding-top: 20px;
-padding-right: 10px;
-padding-left: 10px;
-padding-bottom: 50px;
-   grid-template-areas: 
-   "bild1 bes"
-   ;
+  padding-top: 20px;
+  padding-right: 200px;
+  padding-left: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  grid-template: "bild1 nyhetfläkt"
+  "bes bes";
+ 
 }
 
 
 
-
-.bildbeskrivning{
-
-    grid-area: bes;
-    margin-right: 20px;
+.bildbeskrivning {
+  grid-area: bes;
+  margin-right: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.bild1{
-
-    grid-area: bild1;
-
+.bild1 {
+  grid-area: bild1;
 }
 
+.nyhetfläkt {
+  grid-area: nyhetfläkt;
+  background-color: rgba(165, 42, 42, 0.733);
+  max-height: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.heltnyafläkt {
+  grid-area: heltnya;
+  width: 60px;
+}
 
-
-
-@media screen and (min-width:600px) {
-    .main{
+@media screen and (min-width: 600px) {
+  .main {
     margin-left: 200px;
     margin-right: 20px;
-   
-    }
-    .menupic{ 
-        display: none;
-
-    }
+  }
+  .menupic {
+    display: none;
+  }
+}
