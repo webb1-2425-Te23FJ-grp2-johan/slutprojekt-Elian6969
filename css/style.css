@@ -1,5 +1,5 @@
 body {
-  background-color: ;
+  background-color:navajowhite ;
 }
 
 div {
@@ -71,6 +71,49 @@ border-style: groove;
     max-width: 500px;
 }
 
+.reafläkt {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  background-color: bisque;
+  display: grid;
+  border-style: groove;
+
+  padding-top: 20px;
+  padding-right: 200px;
+  padding-left: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  grid-template: "bild1 bes nyhetfläkt"
+  ;
+ 
+}
+
+.rea{
+  grid-area: nyhetfläkt;
+  background-color: rgba(165, 42, 42, 0.733);
+  max-height: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 100px;
+  padding-right: 15px;
+}
+.rea p{
+  grid-area: nyhetfläkt;
+  max-height: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 10px;
+ 
+}
+
+.bildbeskrivningrea{
+   grid-area: bes;
+  margin-right: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
+}
+
 
 .nya-fläkt {
   margin-left: 20px;
@@ -90,7 +133,14 @@ border-style: groove;
  
 }
 
-
+.bildbeskrivningnyafläkt{
+   grid-area: bes;
+  margin-right: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-height: min-content;
+  max-width: min-content;
+  
+}
 
 .bildbeskrivning {
   grid-area: bes;
