@@ -6,7 +6,7 @@ menupic.addEventListener(
     function(event) {
         console.log(event);
         event.preventDefault();
-    menupic.style.display = "flex"
+
     }
 );
 
