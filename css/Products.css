@@ -2,7 +2,11 @@
 
     align-items: center;
 }
+.home{
 
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
 div {
   padding-left: 5px;
   padding-right: 5px;
@@ -14,10 +18,42 @@ p {
 }
 
 
-.vd-bild{
-    max-width: 500px;
+.vansterstat{
+  background-color: rgba(165, 42, 42, 0.384);
+  grid-area: vanster;
+
+}
+.hogerstat{grid-area: hoger;
+background-color: rgba(165, 42, 42, 0.384);}
+
+
+.flakt1 {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  background-color: bisque;
+  display: grid;
+  border-style: groove;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 20px;
+  padding-right: 200px;
+  padding-left: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  grid-template-areas:
+   "fläktbild beskriv nyhetfläkt pris"
+   "vanster vanster hoger hoger"
+}
+  
+
+.bild1{
+  grid-area: fläktbild;
 }
 
+.bildbeskrivningrea{
+  grid-area: beskriv;
+
+}
 .reafläkt {
   margin-left: 20px;
   margin-right: 20px;
@@ -31,7 +67,7 @@ p {
   padding-left: 10px;
   padding-bottom: 50px;
   margin-bottom: 20px;
-  grid-template: "bild1 bes nyhetfläkt"
+  grid-template: "bild1 beskriv nyhetfläkt"
   "pris pris pris"
   ;
  
@@ -49,8 +85,7 @@ p {
 .rea p{
   grid-area: nyhetfläkt;
   font-weight: bold;
- display: flex;
- flex-direction: column;
+
 }
 
 
