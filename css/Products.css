@@ -21,10 +21,23 @@ p {
 .vansterstat{
   background-color: rgba(165, 42, 42, 0.384);
   grid-area: vanster;
+  border-style: double;
+  margin-top: 50px;
 
+font-size: large;
+min-width: 180px;
 }
+
+
 .hogerstat{grid-area: hoger;
-background-color: rgba(165, 42, 42, 0.384);}
+background-color: rgba(165, 42, 42, 0.384);
+border-style: double;
+margin-top: 50px;
+font-size: large;
+max-width: 165px;
+padding-right: 20px;
+}
+
 
 
 .flakt1 {
@@ -42,13 +55,14 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-bottom: 20px;
   grid-template-areas:
    "fläktbild beskriv nyhetfläkt pris"
-   "vanster vanster hoger hoger"
+   "vanster hoger hoger utfyllnad"
 }
   
 
 .bild1{
   grid-area: fläktbild;
-}
+border-style: solid;
+margin-right:px}
 
 .bildbeskrivningrea{
   grid-area: beskriv;
@@ -79,7 +93,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   max-height: fit-content;
   font-weight: bold;
   border-radius: 5px;
-  margin-left: 143px;
+  margin-left: 90px;
   
 }
 .rea p{
