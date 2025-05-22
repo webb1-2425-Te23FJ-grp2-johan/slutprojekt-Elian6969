@@ -1,5 +1,10 @@
 
+.wrapper{
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+}
 div {
   padding-left: 5px;
   padding-right: 5px;
@@ -23,18 +28,17 @@ p {
 }
 
 .om-oss {
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+ 
   padding-top: 10px;
   padding-bottom: 50px;
 border-style: groove;
-  padding-right: 400px;
+  
   background-color: bisque;
   display: grid;
   grid-template-areas:
     "logo          "
     "textomoss";
+    grid-column: 1 / span 2;
 }
 
 .om-osstext {
@@ -50,8 +54,7 @@ border-style: groove;
 
 
 .vd {
-  margin-left: 20px;
-  margin-right: 20px;
+  
 
   background-color: bisque;
   display: grid;
@@ -61,8 +64,7 @@ border-style: groove;
   padding-right: 200px;
   padding-left: 10px;
   padding-bottom: 50px;
-  margin-bottom: 20px;
- 
+  
 
 }
 .vd-bild{
@@ -70,8 +72,7 @@ border-style: groove;
 }
 
 .reafläkt {
-  margin-left: 20px;
-  margin-right: 20px;
+
 
   background-color: bisque;
   display: grid;
@@ -81,7 +82,7 @@ border-style: groove;
   padding-right: 200px;
   padding-left: 10px;
   padding-bottom: 50px;
-  margin-bottom: 20px;
+ 
   grid-template: "bild1 bes nyhetfläkt"
   "pris pris pris"
   ;
@@ -94,7 +95,7 @@ border-style: groove;
   max-height: fit-content;
   font-weight: bold;
   border-radius: 5px;
-  margin-left: 143px;
+ 
   
 }
 .rea p{
@@ -111,22 +112,21 @@ grid-area: pris;
   max-height: fit-content;
   font-weight: bold;
   border-radius: 5px;
-  margin-top: 30px;
+  
   
 
 }
 
 .bildbeskrivningrea{
    grid-area: bes;
-  margin-right: 20px;
+
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   
 }
 
 
 .nya-fläkt {
-  margin-left: 20px;
-  margin-right: 20px;
+  
 
   background-color: bisque;
   display: grid;
@@ -136,7 +136,7 @@ grid-area: pris;
   padding-right: 200px;
   padding-left: 10px;
   padding-bottom: 50px;
-  margin-bottom: 20px;
+  
   grid-template: "bild1 nyhetfläkt"
   "bes bes";
  
@@ -144,7 +144,7 @@ grid-area: pris;
 
 .bildbeskrivningnyafläkt{
    grid-area: bes;
-  margin-right: 20px;
+ 
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   max-height: min-content;
   max-width: min-content;
@@ -153,7 +153,7 @@ grid-area: pris;
 
 .bildbeskrivning {
   grid-area: bes;
-  margin-right: 20px;
+  
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -167,7 +167,7 @@ grid-area: pris;
   max-height: fit-content;
   font-weight: bold;
   border-radius: 5px;
-  margin-left: 50px;
+ 
 }
 .heltnyafläkt {
   grid-area: heltnya;
