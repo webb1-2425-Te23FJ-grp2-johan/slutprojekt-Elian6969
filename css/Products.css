@@ -7,52 +7,83 @@
   margin-left: 5px;
   margin-bottom: 15px;
 }
-div {
-  padding-left: 5px;
-  padding-right: 5px;
-  max-width: max-content;
-}
+
 
 p {
   max-height: 35px;
 }
 
+.stat{
 
-.vansterstat{
   background-color: rgba(165, 42, 42, 0.384);
-  grid-area: vanster;
-  border-style: double;
-  margin-top: 50px;
-
-font-size: large;
-min-width: 180px;
-}
-
-
-.hogerstat{grid-area: hoger;
-background-color: rgba(165, 42, 42, 0.384);
 border-style: double;
-margin-top: 50px;
+
 font-size: large;
-max-width: 165px;
-padding-right: 20px;
+grid-template-areas:
+
+"max rpm"
+"air cfm"
+"static2 mm"
+"noise dba"
+"power W"
+"life lifesvar"
+;
 }
+
+
+.max{
+  grid-area: max;
+}
+.air{
+  grid-area: air;
+}
+.static{
+  grid-area: static2;
+}
+.noise{
+  grid-area: noise;
+}
+.power{
+  grid-area: power;
+}
+.life{
+  grid-area: life;
+}
+.rpm{
+  grid-area: rpm;
+}
+.cfm{
+  grid-area: cfm;
+}
+.mm{
+  grid-area: mm;
+}
+.dba{
+  grid-area: dba;
+}
+.W{
+  grid-area: W;
+}
+.lifesvar{
+  grid-area: lifesvar;
+}
+
+
+
 
 
 
 .flakt1 {
   margin-left: 20px;
-  margin-right: 20px;
 
   background-color: bisque;
   display: grid;
   border-style: groove;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding-top: 20px;
-  padding-right: 200px;
-  padding-left: 10px;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
+  
+ 
+ 
   grid-template-areas:
    "fläktbild beskriv nyhetfläkt pris"
    "vanster hoger hoger utfyllnad"
@@ -69,18 +100,13 @@ margin-right:px}
 
 }
 .reafläkt {
-  margin-left: 20px;
-  margin-right: 20px;
+
 
   background-color: bisque;
   display: grid;
   border-style: groove;
 
-  padding-top: 20px;
-  padding-right: 200px;
-  padding-left: 10px;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
+
   grid-template: "bild1 beskriv nyhetfläkt"
   "pris pris pris"
   ;
@@ -93,7 +119,7 @@ margin-right:px}
   max-height: fit-content;
   font-weight: bold;
   border-radius: 5px;
-  margin-left: 90px;
+ 
   
 }
 .rea p{
@@ -110,19 +136,42 @@ grid-area: pris;
   font-weight: bold;
   border-radius: 5px;
   margin-top: 30px;
+
   
 
 }
 
 
 
-
 @media screen and (min-width: 600px) {
   .main {
-    margin-left: 200px;
-    margin-right: 20px;
+  
   }
   .menupic {
     display: none;
   }
+
+.flakt1 {
+  margin-left: 20px;
+
+  background-color: bisque;
+  display: grid;
+  border-style: groove;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 20px;
+  
+ 
+ 
+  grid-template-areas:
+   "fläktbild beskriv nyhetfläkt pris"
+   "vanster hoger hoger utfyllnad"
+
+
+
+   
+}
+  
+
+
+
 }
