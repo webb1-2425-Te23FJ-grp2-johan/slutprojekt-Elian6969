@@ -19,53 +19,63 @@ p {
 border-style: double;
 
 font-size: large;
-grid-template-areas:
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-"max rpm"
-"air cfm"
-"static2 mm"
-"noise dba"
-"power W"
-"life lifesvar"
-;
+ grid-column: 1 / span 4;  
+  grid-row: 2 / 3;
+
 }
 
 
 .max{
-  grid-area: max;
+  grid-column: 1 / 2;
+  grid-row: 1 / 6 ;
 }
 .air{
-  grid-area: air;
+   grid-column: 1 / 2;
+  grid-row: 2 / 6 ;
 }
 .static{
-  grid-area: static2;
+  grid-column: 1 / 2;
+  grid-row: 3 / 6 ;
 }
 .noise{
-  grid-area: noise;
+  grid-column: 1 / 2;
+  grid-row: 4 / 6 ;
 }
 .power{
-  grid-area: power;
+  grid-column: 1 / 2;
+  grid-row: 5 / 6 ;
 }
 .life{
-  grid-area: life;
+  grid-column: 1 / 2;
+  grid-row: 6 / 6 ;
 }
 .rpm{
-  grid-area: rpm;
+  grid-column: 2 / 3;
+  grid-row: 1 / 6 ;
 }
 .cfm{
-  grid-area: cfm;
+  grid-column: 2 / 3;
+  grid-row: 2 / 6 ;
 }
 .mm{
-  grid-area: mm;
+  grid-column: 2 / 3;
+  grid-row: 3 / 6 ;
 }
 .dba{
-  grid-area: dba;
+  grid-column: 2 / 3;
+  grid-row: 4 / 6 ;
 }
 .W{
-  grid-area: W;
+  grid-column: 2 / 3;
+  grid-row: 5 / 6 ;
 }
 .lifesvar{
-  grid-area: lifesvar;
+  grid-column: 2 / 3;
+  grid-row: 6 / 6 ;
 }
 
 
@@ -74,68 +84,73 @@ grid-template-areas:
 
 
 .flakt1 {
-  margin-left: 20px;
+  
 
   background-color: bisque;
   display: grid;
   border-style: groove;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding-top: 20px;
+ 
   
  
  
-  grid-template-areas:
-   "fläktbild beskriv nyhetfläkt pris"
-   "vanster hoger hoger utfyllnad"
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+
+column-gap: 5%;
+
 }
   
 
 .bild1{
-  grid-area: fläktbild;
+  grid-column: 1/2;
+  grid-row: 1 / 2;
 border-style: solid;
-margin-right:px}
 
-.bildbeskrivningrea{
-  grid-area: beskriv;
+
+  justify-self: start;
+  align-self: start;
+
 
 }
-.reafläkt {
 
 
-  background-color: bisque;
-  display: grid;
-  border-style: groove;
 
 
-  grid-template: "bild1 beskriv nyhetfläkt"
-  "pris pris pris"
-  ;
- 
+.bildbeskrivningrea{
+ grid-column:2/3 ;
+ grid-row: 1/2;
+justify-self: center;
 }
 
 .rea{
-  grid-area: nyhetfläkt;
+  grid-row: 1/2;
+  grid-column: 3/4;
   background-color: rgba(165, 42, 42, 0.733);
   max-height: fit-content;
   font-weight: bold;
   border-radius: 5px;
- 
+  justify-self: end;
+ align-self: start;
   
 }
 .rea p{
-  grid-area: nyhetfläkt;
+  grid-row: 1/1;
+  grid-column: 2/3;
   font-weight: bold;
 
 }
 
 
 .pris{
-grid-area: pris;
+grid-row: 3/4;
+  grid-column: 3/4;
   background-color: rgba(165, 42, 42, 0.733);
   max-height: fit-content;
   font-weight: bold;
   border-radius: 5px;
-  margin-top: 30px;
+  
+  
 
   
 
@@ -162,9 +177,6 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
  
  
-  grid-template-areas:
-   "fläktbild beskriv nyhetfläkt pris"
-   "vanster hoger hoger utfyllnad"
 
 
 
