@@ -2,3 +2,34 @@
 
     min-width: 40px;
 }
+
+
+.reviewbox1{
+
+background-color: bisque;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto  auto ;
+
+}
+
+.bild{
+
+    grid-column: 2/3;
+    grid-row: 2 / 3;
+}
+
+.review{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.namn{
+
+     grid-column: 1/1;
+    grid-row: 1/2;
+}
+.overview{
+
+     grid-column: 1/1;
+    grid-row: 3/4;
+}
