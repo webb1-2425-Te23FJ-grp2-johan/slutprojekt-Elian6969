@@ -26,7 +26,7 @@ grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
  grid-column: 1 / span 4;  
   grid-row: 2 / 3;
-
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -85,15 +85,16 @@ grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
 
 .flakt1 {
-  
+  border-radius: 10px;
 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: bisque;
   display: grid;
   border-style: groove;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  
   
- 
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
  
   grid-template-columns:  1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto;
@@ -107,11 +108,12 @@ margin-bottom: 5%;
 .bild1{
   grid-column: 1/2;
   grid-row: 1 / 2;
-border-style: solid;
+
 
 
   justify-self: start;
   align-self: start;
+  border-radius: 10px;
 
 
 }
