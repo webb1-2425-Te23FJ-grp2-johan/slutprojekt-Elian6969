@@ -1,36 +1,53 @@
+
+
 .home img{
 
     min-width: 40px;
 }
 
 
-.reviewbox1{
+.reviewbox1, .reviewbox2, .reviewbox3, .reviewbox4{
 
 background-color: bisque;
 display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto  auto ;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+grid-template-columns: 1fr 4fr;
+grid-template-rows: auto  auto;
 
+column-gap: 5px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+border-radius: 10px;
+margin-bottom: 5%;
 }
 
-.bild{
 
-    grid-column: 2/3;
+
+
+
+.bild1 img, .bild2 img, .bild3 img, .bild4 img{
+
+    grid-column: 1/2;
     grid-row: 2 / 3;
+    max-width: fit-content;
+   border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
 }
 
 .review{
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self:center ;
+    justify-self: start;
+    
 }
 .namn{
 
-     grid-column: 1/1;
+     grid-column: 1/  3;
     grid-row: 1/2;
 }
 .overview{
 
-     grid-column: 1/1;
-    grid-row: 3/4;
+     grid-column: 2/3;
+    grid-row: 2/3;
+   
+
 }
