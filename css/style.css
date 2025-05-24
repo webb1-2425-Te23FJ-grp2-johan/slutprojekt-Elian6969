@@ -210,11 +210,12 @@ div {
   grid-row: 6 / 6;
 }
 
-.utdelning{
+.varför-oss{
 display: grid;
 grid-row: 6/7;
 grid-column: 1 / span 2;
 justify-content: center;
+border-style: solid;
 }
 
 
@@ -312,7 +313,7 @@ justify-content: center;
   }
 
 
-  .utdelning{
+  .varför-oss{
 
 grid-column: 1 / span 3;
 
@@ -349,5 +350,11 @@ grid-column: 1 / span 3;
   .reafläkt {
     grid-row: 3/4;
     grid-column: 1/ 2;
+  }
+
+  .varför-oss{
+
+    grid-row: 3/4;
+    grid-column: 2/ span 4;
   }
 }
