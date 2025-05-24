@@ -1,12 +1,8 @@
+const menupic = document.classList.querySelector(".menupic"); 
+const offscreen = document.classList.querySelector(".menu-div");
+const onscreen = document.classList.querySelector(".ham-menu");
 
-const menupic = document.querySelector(".menupic")
-
-menupic.addEventListener(
-    "click", 
-    function(event) {
-        console.log(event);
-        event.preventDefault();
-
-    }
-);
-
+menupic.addEventListener("click", function(event) {
+  offscreen.toggle("active");
+  onscreen.toggle("active");
+});

@@ -19,7 +19,16 @@ div {
 .menu {
   padding: 0;
   list-style-type: none;
+ right: -450px;
+  background-color: #222;
 }
+
+.menu.active{
+
+right: 0;
+}
+
+
 
 .menu-link {
   display: block;
