@@ -210,20 +210,30 @@ div {
   grid-row: 6 / 6;
 }
 
+
+.plats{
+
+  grid-row: 6/7;
+  background-color: bisque;
+  border-radius: 5px;
+  border-style: solid;
+}
+
 .varför-oss{
 display: grid;
-grid-row: 6/7;
+grid-row: 7/8;
 grid-column: 1 / span 2;
 justify-content: center;
 border-style: solid;
 }
 
 
+
 .footer {
   margin-top: 25px;
 
   display: grid;
-  grid-row: 7/8;
+  grid-row: 8/9;
   grid-column: 1 / span 2;
   justify-content: space-evenly;
   background-color: #808080;
@@ -312,7 +322,16 @@ border-style: solid;
     grid-row: ;
   }
 
+  .plats{
 
+    grid-column: span 3;
+
+  }
+.plats iframe{
+
+ max-width: 100%;
+ min-width: 100%;
+}
   .varför-oss{
 
 grid-column: 1 / span 3;
@@ -352,9 +371,20 @@ grid-column: 1 / span 3;
     grid-column: 1/ 2;
   }
 
+.plats{
+
+  grid-column: 2 / span 3;
+  grid-row: 3/4;
+}
+
+.plats iframe{
+
+ max-width: 100%;
+}
+
   .varför-oss{
 
-    grid-row: 3/4;
-    grid-column: 2/ span 4;
+    grid-row: 4/5;
+    grid-column:  span 4;
   }
 }
