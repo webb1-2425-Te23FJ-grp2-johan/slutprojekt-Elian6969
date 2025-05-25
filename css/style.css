@@ -40,13 +40,13 @@ div {
 .menu-div.active {
   right: 0;
   padding-left: 30%;
-background-color: rgb(100, 79, 54);
+background-color: rgb(192, 147, 91);
 align-content: center;
 }
 
 
 .menupic{
-
+background-color: antiquewhite;
 
 
 }
@@ -288,6 +288,7 @@ align-content: center;
     grid-column: 1 / span 4;
     min-width: 100%;
     position: unset;
+    background-color: bisque;
  
   }
 
@@ -362,7 +363,7 @@ flex-direction: row;
   
   .flakt1 {
     grid-column: 1 / span 4;
-    grid-row: ;
+  
   }
 
   .plats {
