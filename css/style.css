@@ -39,8 +39,18 @@ div {
 
 .menu-div.active {
   right: 0;
-  background-color: aqua;
+  padding-left: 30%;
+background-color: rgb(100, 79, 54);
+align-content: center;
 }
+
+
+.menupic{
+
+
+
+}
+
 
 .menu-link {
   display: block;
